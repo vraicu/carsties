@@ -1,4 +1,4 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
@@ -6,6 +6,8 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B6CFFF89-7895-438E-B4D8-7BF1E305A5BC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuctionService", "src\AuctionService\AuctionService.csproj", "{4E3E9135-8CE5-4535-BE12-FF631848E8A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchService", "src\SearchService\SearchService.csproj", "{2478FDF6-8909-48DC-BD8F-341A1F582AED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,8 +22,13 @@ Global
 		{4E3E9135-8CE5-4535-BE12-FF631848E8A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E3E9135-8CE5-4535-BE12-FF631848E8A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E3E9135-8CE5-4535-BE12-FF631848E8A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2478FDF6-8909-48DC-BD8F-341A1F582AED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2478FDF6-8909-48DC-BD8F-341A1F582AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2478FDF6-8909-48DC-BD8F-341A1F582AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2478FDF6-8909-48DC-BD8F-341A1F582AED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4E3E9135-8CE5-4535-BE12-FF631848E8A9} = {B6CFFF89-7895-438E-B4D8-7BF1E305A5BC}
+		{2478FDF6-8909-48DC-BD8F-341A1F582AED} = {B6CFFF89-7895-438E-B4D8-7BF1E305A5BC}
 	EndGlobalSection
 EndGlobal

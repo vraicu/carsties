@@ -121,6 +121,8 @@ public class AuctionsController : ControllerBase
         // TODO: check seller == username
 
         _context.Remove(auction);
+        await _publishEndpoint.Publish(new AuctionDeleted { Id = auction.Id.ToString() });
+
         var result = await _context.SaveChangesAsync() > 0;
         if (!result)
         {

@@ -15,7 +15,7 @@ export default function Listings() {
     const params = useParamsStore(state => ({
         pageNumber: state.pageNumber,
         pageSize : state.pageSize,
-        searchTerms: state.searchTerm
+        searchTerm: state.searchTerm
     }), shallow);
     const setParams = useParamsStore(state => state.setParams)
     const url = qs.stringifyUrl({

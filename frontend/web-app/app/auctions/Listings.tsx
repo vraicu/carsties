@@ -20,6 +20,8 @@ export default function Listings() {
       searchTerm: state.searchTerm,
       orderBy: state.orderBy,
       filterBy: state.filterBy,
+      winner: state.winner,
+      seller: state.seller,
     }),
     shallow
   );

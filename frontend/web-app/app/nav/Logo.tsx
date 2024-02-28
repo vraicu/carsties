@@ -13,8 +13,8 @@ export default function Logo() {
   function doReset() {
     if (pathname !== "/") {
       router.push("/");
-      reset();
     }
+    reset();
   }
 
   return (

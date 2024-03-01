@@ -58,7 +58,7 @@ export default function AuctionForm({ auction }: Props) {
       reset({ make, model, color, mileage, year });
     }
     setFocus("make");
-  }, [setFocus]);
+  }, [setFocus, auction, reset]);
 
   return (
     <form className="flex flex-col mt-3" onSubmit={handleSubmit(onSubmit)}>

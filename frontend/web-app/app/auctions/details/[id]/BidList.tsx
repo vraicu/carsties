@@ -51,7 +51,7 @@ export default function BidList({ user, auction }: Props) {
 
   useEffect(() => {
     setOpen(openForBids);
-  }, [openForBids]);
+  }, [openForBids, setOpen]);
 
   if (loading) {
     return <span>Loading bids ...</span>;

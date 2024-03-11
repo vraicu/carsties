@@ -12,16 +12,19 @@ const orderButtons = [
     label: "Alphabetical",
     icon: AiOutlineSortAscending,
     value: "make",
+    dataTestId: "order-by-alphabetical",
   },
   {
     label: "End date",
     icon: AiOutlineClockCircle,
     value: "endingSoon",
+    dataTestId: "order-by-end-date",
   },
   {
     label: "Recently added",
     icon: BsFillStopCircleFill,
     value: "new",
+    dataTestId: "order-by-recently-added",
   },
 ];
 
@@ -30,16 +33,19 @@ const filterButtons = [
     label: "Live Auctions",
     icon: GiFlame,
     value: "live",
+    dataTestId: "filter-by-live-auctions",
   },
   {
     label: "Ending < 6 hours",
     icon: GiFinishLine,
     value: "endingSoon",
+    dataTestId: "filter-by-ending-soon",
   },
   {
     label: "Completed",
     icon: BsStopwatchFill,
     value: "finished",
+    dataTestId: "filter-by-completed",
   },
 ];
 
@@ -54,12 +60,13 @@ export default function Filters() {
       <div>
         <span className="uppercase text-sm text-gray-500 mr-2">Filter by</span>
         <Button.Group>
-          {filterButtons.map(({ label, icon: Icon, value }) => (
+          {filterButtons.map(({ label, icon: Icon, value, dataTestId }) => (
             <Button
               key={value}
               onClick={() => setParams({ filterBy: value })}
               color={`${filterBy === value ? "red" : "grey"}`}
               className="focus:ring-0"
+              data-testid={dataTestId}
             >
               <Icon className="mr-3 h-4 w-4" />
               {label}
@@ -70,12 +77,13 @@ export default function Filters() {
       <div>
         <span className="uppercase text-sm text-gray-500 mr-2">Order by</span>
         <Button.Group>
-          {orderButtons.map(({ label, icon: Icon, value }) => (
+          {orderButtons.map(({ label, icon: Icon, value, dataTestId }) => (
             <Button
               key={value}
               onClick={() => setParams({ orderBy: value })}
               color={`${orderBy === value ? "red" : "grey"}`}
               className="focus:ring-0"
+              data-testid={dataTestId}
             >
               <Icon className="mr-3 h-4 w-4" />
               {label}

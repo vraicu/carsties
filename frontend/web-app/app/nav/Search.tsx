@@ -26,6 +26,7 @@ export default function Search() {
   return (
     <div className="flex w-[50%] items-center border-2 rounded-full py-2 shadow-sm">
       <input
+        data-testid="search-input"
         type="text"
         placeholder="Search for cars by make, model or color"
         className="input-custom text-sm text-gray-600"

@@ -4,7 +4,7 @@ namespace AuctionService.PlaywrightTests.PageObjectModels;
 
 public class HomePage
 {
-    private readonly IPage _page;
+    private readonly IPage _page; 
     private readonly string _url;
     private readonly ILocator _searchTermInput;
     public ILocator AuctionCard { get; private set; }

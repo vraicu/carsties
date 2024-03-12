@@ -30,7 +30,13 @@ export default function DeleteButton({ id }: Props) {
   }
 
   return (
-    <Button color="failure" outline isProcessing={loading} onClick={doDelete}>
+    <Button
+      data-testid="auction-details-delete-button"
+      color="failure"
+      outline
+      isProcessing={loading}
+      onClick={doDelete}
+    >
       Delete Auction
     </Button>
   );
